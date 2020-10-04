@@ -1,0 +1,88 @@
+.header__main{
+  width: 100%;
+  height: 40px;
+  background-color: #222222;
+  display: flex;
+  position: relative;
+  h1{
+    margin: auto;
+    color: white;
+    font-size: 25px;
+  }
+  h2{
+    position: absolute;right: 10px;bottom: 5px;
+    color: white;
+    font-size: 13px;
+  }
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .sidememo{
+    width: 400px;
+    height: 100vh;
+    background-color: blue;
+    &__bar{
+      background-color: #444444;
+      height: 26px;
+    }
+  }
+  .front{
+    width: 100%;
+    height: 100vh;
+    .calendar{
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      
+      &__main{
+        width: 80%;
+        background-color: green;
+      }
+      &__tool{
+        width: 20%;
+        font-weight: bold;
+        border: solid 1px #000000;
+        &__bar{
+          background-color: #444444;
+          height: 26px;
+        }
+      }
+    }
+    .memo{
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      &__main{
+        width: 80%;
+        background-color: yellow;
+        display: flex;
+        &__day{
+          width: 50%;
+          &__bar{
+            background-color: #444444;
+            height: 26px;
+          }
+        }
+        &__sub{
+          width: 50%;
+          &__bar{
+            background-color: #444444;
+            height: 26px;
+          }
+        }
+      }
+      &__side{
+        width: 20%;
+        font-weight: bold;
+        border: solid 1px #000000;
+        &__bar{
+          background-color: #444444;
+          height: 26px;
+        }
+      }
+    }
+  }
+}
