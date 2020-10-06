@@ -1,5 +1,13 @@
 i{
   color: white;
+  position: absolute;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+  
 }
 
 
@@ -38,6 +46,23 @@ i{
     &__bar{
       background-color: #444444;
       height: 26px;
+      display: flex;
+      justify-content: flex-end;
+      &__plus{
+        width: 26px;
+        position: relative;
+        font-weight: bold;
+        border-left: solid 0.5px #555555;
+      }
+      &__bars{
+        width: 26px;
+        position: relative;
+        font-weight: bold;
+        border-left: solid 0.5px #555555;
+      }
+    }
+    &__space{
+      
     }
   }
   .front{
@@ -75,7 +100,28 @@ i{
           &__bar{
             background-color: #444444;
             height: 26px;
+            display: flex;
+            justify-content: flex-end;
+            &__eye{
+              width: 26px;
+              position: relative;
+              font-weight: bold;
+              border-left: solid 0.5px #555555;
+            }
+            &__plus{
+              width: 26px;
+              position: relative;
+              font-weight: bold;
+              border-left: solid 0.5px #555555;
+            }
+            &__bars{
+              width: 26px;
+              position: relative;
+              font-weight: bold;
+              border-left: solid 0.5px #555555;
+            }
           }
+          &__space{}
         }
       }
       &__side{

@@ -5,8 +5,11 @@
 .main
   .sidememo
     .sidememo__bar
-      %i.fas.fa-plus
-      %i.fas.fa-bars
+      .sidememo__bar__plus
+        %i.fas.fa-plus
+      .sidememo__bar__bars
+        %i.fas.fa-bars
+    .sidememo__space
   .front
     .calendar
       .calendar__main{style:"border-left-style: hidden;"}
@@ -15,4 +18,11 @@
       .memo__main
         .memo__main__day
           .memo__main__day__bar
+            .memo__main__day__bar__eye
+              %i.far.fa-eye
+            .memo__main__day__bar__plus
+              %i.fas.fa-plus
+            .memo__main__day__bar__bars
+              %i.fas.fa-bars
+          .memo__main__day__space
       .memo__side
