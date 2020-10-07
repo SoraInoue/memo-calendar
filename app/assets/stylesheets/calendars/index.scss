@@ -1,4 +1,4 @@
-i{
+.icon{
   color: white;
   position: absolute;
   margin: 0;
@@ -27,10 +27,20 @@ i{
     color: white;
     font-size: 25px;
   }
-  h2{
-    position: absolute;right: 10px;bottom: 5px;
-    color: white;
-    font-size: 13px;
+  .change{
+    position: absolute;right: 5px;
+    font-size: 20px;
+    .account{
+      width: 40px;
+      height: 40px;
+      a{
+        text-decoration: none;
+        color: white;
+        .icon{
+
+        }
+      }
+    }
   }
 }
 
@@ -62,7 +72,8 @@ i{
       }
     }
     &__space{
-      
+      height: calc(100% - 26px);
+      padding: 10px;
     }
   }
   .front{
@@ -121,7 +132,10 @@ i{
               border-left: solid 0.5px #555555;
             }
           }
-          &__space{}
+          &__space{
+            height: calc(100% - 26px);
+            padding: 10px;
+          }
         }
       }
       &__side{

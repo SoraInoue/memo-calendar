@@ -1,14 +1,17 @@
 %header
   .header__main
     %h1.title Memo-calendar
-    %h2.state ログアウト
+    .change
+      .account
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog', class: 'icon')
 .main
   .sidememo
     .sidememo__bar
       .sidememo__bar__plus
-        %i.fas.fa-plus
+        %i.icon.fas.fa-plus
       .sidememo__bar__bars
-        %i.fas.fa-bars
+        %i.icon.fas.fa-bars
     .sidememo__space
   .front
     .calendar
@@ -19,10 +22,10 @@
         .memo__main__day
           .memo__main__day__bar
             .memo__main__day__bar__eye
-              %i.far.fa-eye
+              %i.icon.far.fa-eye
             .memo__main__day__bar__plus
-              %i.fas.fa-plus
+              %i.icon.fas.fa-plus
             .memo__main__day__bar__bars
-              %i.fas.fa-bars
+              %i.icon.fas.fa-bars
           .memo__main__day__space
       .memo__side
