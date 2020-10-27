@@ -5,13 +5,8 @@
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) 
-  
+  transform: translate(-50%, -50%)
 }
-
-
-
-
 
 .header__main{
   width: 100%;
@@ -35,9 +30,6 @@
       a{
         text-decoration: none;
         color: white;
-        .icon{
-
-        }
       }
     }
   }
@@ -51,73 +43,41 @@
     width: 400px;
     height: 100vh;
     font-weight: bold;
-    border: solid 1px #000000;
-    &__bar{
-      background-color: #444444;
-      height: 26px;
-      display: flex;
-      justify-content: flex-end;
-      &__plus{
-        width: 26px;
-        position: relative;
-        font-weight: bold;
-        border-left: solid 0.5px #555555;
-        cursor: pointer;
-      }
-      &__bars{
-        width: 26px;
-        position: relative;
-        font-weight: bold;
-        border-left: solid 0.5px #555555;
-        cursor: pointer;
-      }
-    }
+    border-right: solid 1px white;
+    background-color: #444444;
     &__space{
       height: 777px;
       padding: 10px;
       overflow: auto;
-      .side-memo{
-        height: 250px;
+      &__box{
+        background-color: #FFFFC0;
+        width: 320px;
         padding: 5px;
-        font-weight: bold;
-        background-color:#FFFAF0;
-        border: solid 1px #000000;
-        margin-bottom: 10px;
-        .memo-preview{
-          &__bar{
+        margin-bottom: 5px;
+        overflow: auto;
+        &__bar{
+          font-size: 15px;
+          text-align: center;
+          padding-right: 24px;
+          border-bottom: solid 1px #000000;
+          position: relative;
+          &__icon{
             height: 24px;
-            display: flex;
-            position: relative;
-            &__title{
-              width: 100%;
-              padding-right: 24px;
-              font-weight: bold;
-              border-left: none;
-              border-right: none;
-              border-top: none;
-              border-bottom: solid 1px #000000;
-              text-align: center;
-              background-color:#FFFAF0;
-            }
-            &__times{
-              position: absolute;right: 0px;
-              width: 24px;
-              cursor: pointer;
-              i{
-                margin: 4px 6.5px;
-              }
+            width: 24px;
+            position: absolute;right: 0px;
+            cursor: pointer;
+            &__delete{
+              text-decoration: none;
             }
           }
-          &__text{
-            margin-top: 5px;
-            &__main{
-              width: 100%;
-              height: 221px;
-              border: none;
-              resize: none;
-              background-color:#FFFAF0;
-            }
-          }
+        }
+        &__time{
+          font-size: 14px;
+          text-align: end;
+          border-bottom: solid 1px #000000;
+        }
+        &__memo{
+          
         }
       }
     }
@@ -132,15 +92,11 @@
       font-weight: bold;
       border-bottom: solid 0.5px white;
       &__main{
-        width: 80%;
+        width: 100%;
         font-weight: bold;
         border: solid 1px #000000;
-      }
-      &__tool{
-        width: 20%;
-        font-weight: bold;
-        border: solid 1px #000000;
-        background-color: #444444;
+        overflow: auto;
+        padding: 5px;
       }
     }
     .memo{
@@ -159,22 +115,17 @@
             height: 26px;
             display: flex;
             justify-content: flex-end;
-            &__eye{
+            &__plus{
               width: 26px;
               position: relative;
               font-weight: bold;
               border-left: solid 0.5px #555555;
-            }
-            &__bars{
-              width: 26px;
-              position: relative;
-              font-weight: bold;
-              border-left: solid 0.5px #555555;
+              cursor: pointer;
             }
           }
           &__space{
-            height: 364.5px;
-            padding: 10px;
+            height: calc(50vh - 26px);
+            overflow: auto;
           }
         }
       }
@@ -182,7 +133,19 @@
         width: 20%;
         font-weight: bold;
         border: solid 1px #000000;
-        background-color: #222222;
+        background-color: #D3D3D3;
+        overflow: auto;
+        padding: 2px;
+        .update{
+          font-weight: bold;
+          border: solid 1px #000000;
+          margin-bottom: 2px;
+          li{
+            font-size: 13px;
+            border-bottom: solid 1px #000000;
+            background-color: white;
+          }
+        }
       }
     }
   }

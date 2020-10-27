@@ -7,25 +7,39 @@
           = icon('fas', 'cog', class: 'icon')
 .main
   .sidememo
-    .sidememo__bar
-      .sidememo__bar__plus
-        %i.icon.fas.fa-plus
-      .sidememo__bar__bars
-        %i.icon.fas.fa-bars
     .sidememo__space
-      %ul#memo-box
-        %div#memo-input
+      - current_user.calendars.each do |calendar|
+        .sidememo__space__box
+          .sidememo__space__box__bar
+            = calendar.title
+            %i.sidememo__space__box__bar__icon
+              = link_to '✖️',calendar,class: "sidememo__space__box__bar__icon__delete", method: :delete, data: { confirm: '削除してよろしいですか?' }
+          .sidememo__space__box__time
+            = calendar.start_time.strftime("%Y-%m-%d")
+          .sidememo__space__box__memo
+            = simple_format(calendar.memo)
+        
   .front
     .calendar
       .calendar__main{style:"border-left-style: hidden;"}
-      .calendar__tool
+        = month_calendar events: current_user.calendars do |date, calendars|
+          = date
+          - calendars.each do |calendar|
+            %p.calendar__main__events
+              = calendar.title
     .memo
       .memo__main
         .memo__main__day
           .memo__main__day__bar
-            .memo__main__day__bar__eye
-              %i.icon.far.fa-eye
-            .memo__main__day__bar__bars
-              %i.icon.fas.fa-bars
+            .memo__main__day__bar__plus
+              %i.icon.fas.fa-plus
           .memo__main__day__space
+            = render 'calendars/new'
       .memo__side
+        %p{style:"text-align: center;"}　データ一覧
+        - current_user.calendars.each do |calendar|
+          %ul.update
+            %li
+              = calendar.title
+            %li
+              =calendar.start_time.strftime("%Y-%m-%d")

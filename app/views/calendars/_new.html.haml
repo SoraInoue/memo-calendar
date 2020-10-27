@@ -1,0 +1,13 @@
+.memo__main__day__space__box{style: "display: none;"}
+  %section.memo__main__day__space__box__input
+    = form_with model: @calendar, local: true do |f|
+      .memo-name
+        .title
+          = f.text_field :title, {class: 'title-bar', placeholder: 'タイトル（8文字）', maxlength: "8"}
+      .time
+        != sprintf(f.date_select(:start_time, use_month_numbers: true, date_separator: '%s', datetime_separator: '%s'), '年', '月', '日')
+        
+      .memo-main
+        = f.text_area :memo,{wrap: "hard", class: 'memo-area', maxlength: "300",rows: "5", placeholder: '300文字'}
+        .submit
+          = f.submit
