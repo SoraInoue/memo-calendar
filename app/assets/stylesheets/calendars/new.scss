@@ -1,0 +1,41 @@
+.memo__main__day__space__box{
+  height: auto;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 5px;
+  background-color:#FFFAF0;
+  border: solid 1px #000000;
+  .memo-name{
+    display: flex;
+    border-bottom: solid 1px #000000;
+    .title{
+      width: 100%;
+      .title-bar{
+        height: 20px;
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        border: none;
+        background-color:#FFFAF0;
+      }
+    }
+  }
+  .time{
+    text-align:right;
+  }
+  .memo-main{
+    height: auto;
+    text-align: center;
+    .memo-area{
+      width: 60%;
+      height: 240px;
+      padding: 5px 80px;
+      font-size: 20px;
+      resize: none;
+    }
+  }
+  .submit{
+    text-align:right;
+  }
+}
