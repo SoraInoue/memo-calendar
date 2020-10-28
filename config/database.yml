@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: memo-calendar_production
-  username: memo-calendar
-  password: <%= ENV['MEMO-CALENDAR_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
