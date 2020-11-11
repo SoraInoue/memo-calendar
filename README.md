@@ -12,8 +12,6 @@
 　テスト用アカウント等  
 　　メールアドレス: example@gmail.com  
 　　パスワード: aaaa1111  
-　Githubリポジトリ  
-　　https://github.com/SoraInoue/memo-calendar  
 
 ##### 開発状況  
 　　開発環境  
