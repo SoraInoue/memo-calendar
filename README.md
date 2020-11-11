@@ -13,7 +13,7 @@
 　　メールアドレス: example@gmail.com  
 　　パスワード: aaaa1111  
   
-![画像](FireShot Capture 009 - MemoCalendar - 54.168.35.246.png)
+![画像](https://github.com/SoraInoue/memo-calendar/blob/master/FireShot%20Capture%20009%20-%20MemoCalendar%20-%2054.168.35.246.png)
 
 ##### 開発状況  
 　　開発環境  
